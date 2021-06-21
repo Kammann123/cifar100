@@ -1,2 +1,5 @@
 # Remove databases
 *.npy
+
+# Remove python notebook checkpoints
+.ipynb_checkpoints/
