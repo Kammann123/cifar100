@@ -5,6 +5,7 @@
 """
 
 # Python modules
+import tensorflow as tf
 import pandas as pd
 
 
@@ -16,3 +17,16 @@ def generate_submission(predictions, filepath='submission.csv'):
     df = pd.DataFrame(predictions, columns=['label'])
     df.index.name = 'Id'
     df.to_csv(filepath)
+
+
+def resize_images(images, height, width):
+  """ Resizes images using the bicubic interpolation method and returns them in a
+      [0, 255] value mode.
+      @param images Group of images
+      @param height Height of the output image
+      @param width Width of the output image
+  """
+  resized = tf.image.resize(images / 255, (width, height), method=tf.image.ResizeMethod.BICUBIC) * 255
+  resized = tf.cast(resized, tf.int32)
+  return resized
+  
