@@ -5,3 +5,5 @@ The link to the Kaggle competition is https://www.kaggle.com/c/rn2021q1itba-cifa
 ## Tests
 * **test-00**: Base neural network with minor improvements
 * **test-02**: Transfer Learning with VGG16
+* **test-03**: Data augmentation
+* **test-04**: Transfer Learninig with EfficientNetB0
