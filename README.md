@@ -1,13 +1,15 @@
-# nn-tp3
-Work developed in Python using Jupyter Notebooks for the Neural Networks course. The work consists on a Kaggle challenge to classify images from the CIFAR-100 dataset.
+# cifar100
+Work developed in Python using Jupyter Notebooks for the Neural Networks course at ITBA. The work consisted on a Kaggle challenge to classify images from the CIFAR-100 dataset.
+
 The link to the Kaggle competition is https://www.kaggle.com/c/rn2021q1itba-cifar100.
 
-**The winner jupyter notebook is test-09**
+For the competition, we tried several architectures, topologies or networks until we finally won using transfer learning and EfficientNetB3. The winner jupyter notebook is named **test-09**
 
 ## Analysis
-Simple jupyter notebook to analyze the dataset.
+In the **analysis/** folder, there is a jupyter notebook were we analyzed the dataset to have a better understanding of the problem.
 
 ## Tests
+In the **tests/** folder, there are other folders with jupyter notebooks for each attempt we did in order to reach a winner neural network.
 * **test-00**: Base neural network with minor improvements
 * **test-01**: TL with ResNet50 val_acc = 0.77
 * **test-02**: TL with VGG16 not good results at first, we dropped this path
